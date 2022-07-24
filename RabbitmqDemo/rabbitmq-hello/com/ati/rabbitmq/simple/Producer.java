@@ -1,4 +1,4 @@
-package com.ati.rabbitmq.one;
+package com.ati.rabbitmq.simple;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
@@ -34,8 +34,6 @@ public class Producer {
          * 4.发送消息的消息体
          */
         channel.basicPublish("", QUEUE_NAME, null, message.getBytes());
-        channel.close();
-        connection.close();
         System.out.println("消息发送完毕");
 
     }
