@@ -12,7 +12,7 @@ public class Producer {
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("124.221.238.98");
         factory.setUsername("admin");
-        factory.setPassword("1231");
+        factory.setPassword("123");
 //channel 实现了自动 close 接口 自动关闭 不需要显示关闭
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
